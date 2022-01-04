@@ -17,7 +17,20 @@ class _MyHomePageState extends State<MyHomePage> {
           Center(
             child: Text(
               'Hello, world!',
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(
+                fontSize: 50,
+                // fontWeight: FontWeight.w900,
+              ),
+            ),
+          ),
+          Center(
+            child: SizedBox(
+              height: 40,
+              width: 40,
+              child: CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('assets/images/avatar.png'),
+              ),
             ),
           ),
         ],
