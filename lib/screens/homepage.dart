@@ -1,3 +1,4 @@
+import 'package:design1/widget/button.dart';
 import 'package:design1/widget/card.dart';
 import 'package:flutter/material.dart';
 import "../widget/colors.dart" as colors;
@@ -64,6 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const Cards(),
+              const Button(),
             ],
           ),
         ),
