@@ -16,13 +16,13 @@ class Button extends StatelessWidget {
             color: Colors.white),
       ),
       style: ButtonStyle(
-          elevation: MaterialStateProperty.all<double>(5.0),
-          backgroundColor:
-              MaterialStateProperty.all<Color>(colors.primaryColor),
-          minimumSize: MaterialStateProperty.all<Size>(const Size(331, 46)),
-          shape: MaterialStateProperty.all<OutlinedBorder>(
-              const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(100.0))))),
+        elevation: MaterialStateProperty.all<double>(5.0),
+        backgroundColor: MaterialStateProperty.all<Color>(colors.primaryColor),
+        minimumSize: MaterialStateProperty.all<Size>(const Size(331, 46)),
+        shape: MaterialStateProperty.all<OutlinedBorder>(
+            const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(100.0)))),
+      ),
       onPressed: () {},
     );
   }

@@ -65,7 +65,48 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const Cards(),
+              const SizedBox(
+                height: 22.0,
+              ),
               const Button(),
+              const SizedBox(
+                height: 46.0,
+              ),
+              Container(
+                margin: const EdgeInsets.only(left: 24, right: 24),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "Your interests",
+                      style: TextStyle(
+                        fontSize: 21,
+                        height: 1.1,
+                        color: colors.textColor,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        "See more",
+                        style: TextStyle(
+                          fontSize: 17,
+                          height: 1.1,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(colors.linkColor),
+                        textStyle: MaterialStateProperty.all<TextStyle>(
+                            const TextStyle(
+                                decoration: TextDecoration.underline)),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
