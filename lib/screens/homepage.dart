@@ -1,4 +1,6 @@
+import 'package:design1/widget/card.dart';
 import 'package:flutter/material.dart';
+import "../widget/colors.dart" as colors;
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -30,9 +32,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           Text(
                             "Find the stuff you love.",
                             style: TextStyle(
-                              height: 1.2,
-                              fontSize: 32,
+                              height: 1.1,
+                              fontSize: 33,
                               fontWeight: FontWeight.bold,
+                              color: colors.textColor,
                             ),
                             textAlign: TextAlign.left,
                           ),
@@ -40,10 +43,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           Text(
                             "Take a look at we found for you!",
                             style: TextStyle(
-                              fontSize: 16,
-                              height: 1.2,
-                              fontWeight: FontWeight.normal,
-                            ),
+                                fontSize: 17,
+                                height: 1.2,
+                                fontWeight: FontWeight.normal,
+                                color: colors.textColor),
                             textAlign: TextAlign.left,
                           ),
                         ],
@@ -59,7 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-              )
+              ),
+              const Cards(),
             ],
           ),
         ),

@@ -9,3 +9,5 @@ const shoppingColor = Color(0xFFEEEDEA);
 const trendingColor = Color(0xFFD3B193);
 const incommingColor = Color(0xFF7CA5CF);
 const browseColor = Color(0xFFB5D4CC);
+const pillBackgroundColor = Color(0xFFEBF5F3);
+const pillColor = Color(0xFF017E7E);
