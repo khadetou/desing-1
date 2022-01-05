@@ -4,6 +4,7 @@ import 'package:design1/widget/category.dart';
 import 'package:design1/widget/interests-list.dart';
 import 'package:flutter/material.dart';
 import "../widget/colors.dart" as colors;
+import "package:feather_icons/feather_icons.dart";
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -118,7 +119,48 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 28.0,
                   ),
                   const Category(),
+                  const SizedBox(
+                    height: 28.0,
+                  ),
                 ],
+              ),
+            ],
+          ),
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerDocked,
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            child: const Icon(FeatherIcons.search),
+            backgroundColor: colors.primaryColor,
+          ),
+          bottomNavigationBar: BottomNavigationBar(
+            selectedItemColor: colors.textColor,
+            unselectedItemColor: colors.greyColor,
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(FeatherIcons.home),
+                label: "Home",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(FeatherIcons.heart),
+                label: "Favorites",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  FeatherIcons.search,
+                  color: colors.whiteColor,
+                ),
+                backgroundColor: colors.whiteColor,
+                label: "",
+                tooltip: "Search",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(FeatherIcons.fileText),
+                label: "File",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(FeatherIcons.shoppingCart),
+                label: "Shopping Cart",
               ),
             ],
           ),
